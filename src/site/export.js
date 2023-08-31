@@ -1,6 +1,14 @@
 import { MAIN } from '../constants';
 import { SITE_OPTIONS } from './options';
-import { myCourses } from '../components/courses';
+import { 
+  myCourses, 
+  forum, 
+  myProfile, 
+  banners, 
+  sections, 
+  social,
+  searchCertificate 
+} from '../components/site';
 
 export const siteExport = [
   
@@ -26,7 +34,7 @@ export const siteExport = [
   {
     id: MAIN.SITE_BANNERS,
     component: banners(),
-    trigger: MAIN.RESET
+    trigger: MAIN.CONFIG_OPTIONS_BANNER
   },
   {
     id: MAIN.SITE_SECTIONS,

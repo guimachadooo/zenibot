@@ -63,3 +63,41 @@ export const banners = () => {
     </div>
   )
 }
+
+export const sections = () => {
+
+  return (
+    <div>
+      <p>
+        A página inicial do seu EAD é o ponto de início dos alunos.
+        E as seções ajudam a exibir todo seu conteúdo de cursos e informações
+        de venda. Para aprender sobre o cadastro clique no botão abaixo.
+      </p>
+    </div>
+  )
+}
+
+export const social = () => {
+
+  return (
+    <div>
+      <p>
+        Nessa área serão exibidas as redes sociais da escola cadastradas
+        no painel <b>Administrar</b>. Para aprender sobre o cadastro clique no botão abaixo.
+      </p>
+    </div>
+  )
+}
+
+export const searchCertificate = () => {
+
+  return (
+    <div>
+      <p>
+        Esse link leva para uma página <b>pública</b> para qualquer pessoa
+        ou instituição {'('}sem cadastro no EAD{')'} consultar o certificado de um aluno. 
+        É necessário saber a data de conclusão e o código do certificado.
+      </p>
+    </div>
+  )
+}

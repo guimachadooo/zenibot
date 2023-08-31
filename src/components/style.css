@@ -1,0 +1,11 @@
+.btn-docs{
+  background: rgb(110, 72, 170);
+  border: 0px;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+}
