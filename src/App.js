@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { mainArr } from './includes';
+import ChatBot from 'react-simple-chatbot';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChatBot
+        floating
+        hideSubmitButton
+        headerTitle="ZeniBot"
+        placeholder="Clique em uma opção acima"
+        botAvatar="https://cdn.discordapp.com/avatars/778334734476115978/f59d4d5d3f03e72d65f8d9d240a12ebb.webp?size=80"
+        steps={mainArr}
+      />
     </div>
   );
 }
