@@ -1,5 +1,6 @@
 import { MAIN } from '../constants';
 import { MAIN_OPTIONS } from './options';
+import { myDashboard } from '../components/general';
 
 export const mainExport = [
   
@@ -11,6 +12,11 @@ export const mainExport = [
   {
     id: MAIN.INITIAL_OPTIONS,
     options: MAIN_OPTIONS,
+  },
+  {
+    id: MAIN.DASHBOARD,
+    component: myDashboard(),
+    trigger: MAIN.RESET
   },
   {
     id: MAIN.RESET,

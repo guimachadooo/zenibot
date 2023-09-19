@@ -10,6 +10,8 @@ import {
   searchCertificate 
 } from '../components/site';
 
+import { triggerReset } from '../components/general';
+
 export const siteExport = [
   
   {
@@ -19,36 +21,36 @@ export const siteExport = [
   {
     id: MAIN.SITE_MY_COURSES,
     component: myCourses(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
   {
     id: MAIN.SITE_FORUM,
     component: forum(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
   {
     id: MAIN.SITE_PROFILE,
     component: myProfile(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
   {
     id: MAIN.SITE_BANNERS,
     component: banners(),
-    trigger: MAIN.CONFIG_OPTIONS_BANNER
+    ...triggerReset
   },
   {
     id: MAIN.SITE_SECTIONS,
     component: sections(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
   {
     id: MAIN.SITE_SOCIAL,
     component: social(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
   {
     id: MAIN.SITE_CERTIFICATE,
     component: searchCertificate(),
-    trigger: MAIN.RESET
+    ...triggerReset
   },
 ]
