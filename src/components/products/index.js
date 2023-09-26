@@ -71,10 +71,10 @@ export const prodOffers = () => {
   return (
     <div>
       <p>
-        Aqui serão listados todos os preços vinculados ao produto. O esquema de <b>Ofertas</b>
-        permite criar várias condições e valores diferentes, e você pode deixar ofertas como 
-        <b>Não Listadas</b> para enviá-las a pessoas específicas, ou utilizar em landing pages para
-        promoções, sem que precisem comprar o produto pelo valor real.
+        Aqui serão listados todos os preços vinculados ao produto. <br/>
+        O esquema de <b>Ofertas</b> permite criar várias condições e valores diferentes, 
+        e você pode deixar ofertas como <b>Não Listadas</b> para enviá-las a pessoas específicas, 
+        ou utilizar em landing pages para promoções, sem que precisem comprar o produto pelo valor real.
       </p>
     </div>
   )
@@ -98,7 +98,7 @@ export const prodMarketing = () => {
       <p>
         Nessa área o cliente pode definir um script de conversão para ser executado sempre 
         que acontecer alguma ação com o produto. É possível executar scripts de conversão de 3 formas:
-      </p><br/>
+      </p>
 
       <ul>
         <li>Nativo: Verifica as integrações de Track na EAD Store;</li>
@@ -136,7 +136,7 @@ export const prodLists = () => {
     <div>
       <p>
         Nessa área são exibidos todos os alunos que:
-      </p><br/>
+      </p>
 
       <ul>
         <li>Alunos que deixaram o curso no carrinho mas não finalizaram a compra;</li>

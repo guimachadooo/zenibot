@@ -165,7 +165,7 @@ export const collaborators = () => {
       </p>
 
       <p>
-        Atualmente apenas usuários de permissão <b>Administrador</b> ou <b>Professor</b>
+        Atualmente apenas usuários de permissão <b>Administrador</b> ou <b>Professor </b>
         podem ser incluídos nessa lista.
       </p>
     </div>
@@ -204,8 +204,18 @@ export const questionBank = () => {
   return (
     <div>
       <p>
-        banco de questoes
+        É possível criar provas que permitem avaliar o conhecimento dos alunos, 
+        gerando nota e outras informações. O primeiro passo para se criar uma prova 
+        é antes criar todas as perguntas que serão usadas nela. Para isso serve
+        o <b>Banco de Questões</b>.
       </p>
+
+      <p>
+        Cada curso possui seu <b>Banco de Questões</b>, e também é possível
+        copiar as questões para outros cursos.
+      </p><br/>
+
+      {btnArticle('editando-cursos#provas-e-banco-de-questões')}
     </div>
   )
 }
@@ -214,7 +224,9 @@ export const finalExam = () => {
   return (
     <div>
       <p>
-        prova final
+        A <b>Prova Final</b> é exibida no fim do curso para os alunos. Geralmente
+        os clientes cadastram ela para avaliar o conhecimento geral no curso e depois
+        liberar a emissão do certificado.
       </p>
     </div>
   )
@@ -224,7 +236,9 @@ export const courseEnrolls = () => {
   return (
     <div>
       <p>
-        curso matriculas
+        A seção de <b>Matrículas</b> dentro do curso permite visualizar de forma prática 
+        o progresso de todos os alunos do curso, além de exportar esses dados tanto em 
+        planilha quanto PDF, e envio de comunicados.
       </p>
     </div>
   )

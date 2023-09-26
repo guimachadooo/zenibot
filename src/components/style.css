@@ -9,3 +9,12 @@
   padding: 12px;
   cursor: pointer;
 }
+
+.img-answer{
+  display: flex;
+  justify-content: center;
+}
+
+.img-answer img{
+  max-width: 75%;
+}

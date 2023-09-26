@@ -1,6 +1,12 @@
 import { MAIN } from '../constants';
 import { MAIN_OPTIONS } from './options';
-import { myDashboard } from '../components/general';
+import { 
+  apiDetails, 
+  eadStore, 
+  myDashboard, 
+  trash, 
+  webhooks 
+} from '../components/general';
 
 export const mainExport = [
   
@@ -16,6 +22,26 @@ export const mainExport = [
   {
     id: MAIN.DASHBOARD,
     component: myDashboard(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.EAD_STORE,
+    component: eadStore(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.API,
+    component: apiDetails(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.WEBHOOKS,
+    component: webhooks(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.TRASH,
+    component: trash(),
     trigger: MAIN.RESET
   },
   {

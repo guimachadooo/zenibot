@@ -40,12 +40,16 @@ export const myProfile = () => {
         e atalhos para compras, matrículas e assinaturas. <br/>
 
         No seu perfil é possível alterar os dados, fotos e cadastrar
-        a forma de pagamento para as compras no EAD. <br/>
+        a forma de pagamento para as compras no EAD. 
+      </p>
 
+      <p>
         Na área de <b>Matrículas</b> ele visualiza todos os cursos que possui
         e quando expiram os acessos. Em <b>Assinaturas</b> o aluno visualiza
-        os planos ativos e altera a forma de pagamento de sua assinatura.<br/>
+        os planos ativos e altera a forma de pagamento de sua assinatura.
+      </p>
 
+      <p>
         Já na área de <b>Compras</b> é possível visualizar todas as compras feitas no EAD,
         seja de cursos, combos, planos, períodos de acesso ou certificados.
       </p>
