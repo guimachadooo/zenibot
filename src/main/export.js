@@ -1,8 +1,11 @@
 import { MAIN } from '../constants';
 import { MAIN_OPTIONS } from './options';
 import { 
+  about,
   apiDetails, 
+  docs, 
   eadStore, 
+  images, 
   myDashboard, 
   trash, 
   webhooks 
@@ -42,6 +45,21 @@ export const mainExport = [
   {
     id: MAIN.TRASH,
     component: trash(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.IMAGES,
+    component: images(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.DOCS,
+    component: docs(),
+    trigger: MAIN.RESET
+  },
+  {
+    id: MAIN.ABOUT,
+    component: about(),
     trigger: MAIN.RESET
   },
   {

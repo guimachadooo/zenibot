@@ -2,6 +2,8 @@ import React from 'react';
 import { mainArr } from './includes';
 import ChatBot from 'react-simple-chatbot';
 
+import "./style.css";
+
 function App() {
 
   return (
@@ -12,8 +14,9 @@ function App() {
         steps={mainArr}
         hideSubmitButton
         enableSmoothScroll
+        className="general"
         enableMobileAutoFocus
-        headerTitle="ZeniBot"
+        headerTitle="ZeniBot v1"
         style={{height: '90%'}}
         contentStyle={{height: '80%'}}
         placeholder="Clique em uma opção acima"

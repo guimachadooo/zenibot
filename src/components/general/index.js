@@ -70,7 +70,17 @@ export const apiDetails = () => {
 
   return (
     <div>
-      <p>teste api</p>
+      <p>
+        A <b>API</b> é um conjunto de pontos de entrada e saída de dados da plataforma.
+      </p>
+
+      <p>
+        É através da API que o cliente integra o seu EAD com algum outro sistema. 
+        Além disso, também é possível recriar as funcionalidades existentes na plataforma 
+        consumindo a API.
+      </p><br/>
+
+      {btnArticle('https://docs.eadplataforma.com/reference/api-nova-versao', 'Ver Documentação', true)}
     </div>
   )
 }
@@ -79,7 +89,17 @@ export const webhooks = () => {
 
   return (
     <div>
-      <p>teste webhooks</p>
+      <p>
+        Webhook é uma forma de recebimento de informações, que são passadas quando um evento acontece.
+      </p>
+
+      <p>
+        Dessa forma, o webhook na prática, é a forma de receber informações entre dois sistemas de 
+        uma forma passiva, fornecendo informações em tempo real. Um jeito muito eficiente de se 
+        comunicar tanto para o prestador dos dados, como para o consumidor.
+      </p><br/>
+
+      {btnArticle('webhooks')}
     </div>
   )
 }
@@ -88,7 +108,77 @@ export const trash = () => {
 
   return (
     <div>
-      <p>teste lixeira</p>
+      <p>
+        Todos os registros que são excluídos no EAD passam primeiro pela <b>Lixeira</b>, 
+        para permitir que os administradores consigam restaurar algum dado que tenha sido 
+        excluído sem querer. Mas também existe a opção de excluir definitivamente, 
+        que é feito também nessa tela.
+      </p>
+
+      <p>
+        Os registros permanecem por 90 dias na <b>Lixeira </b> 
+        até que sejam excluídos definitivamente.
+      </p>
+    </div>
+  )
+}
+
+export const images = () => {
+
+  return (
+    <div>
+      <ul>
+        <li>Logotipo 240x60</li>
+        <li>Logotipo para fundo branco 240x60</li>
+        <li>Logotipo tela da aula 240x60</li>
+        <li>Logotipo de login 240x60</li>
+        <li>Capa de fundo de login 1470x1080</li>
+        <li>Icone do App 2048x2732</li>
+        <li>Imagem padrão {'('}thumbnail quando compartilha o link{')'} 470x245</li>
+        <li>Capa do curso 600x340</li>
+        <li>Capa do produto 991x592</li>
+        <li>Capa de fundo do produto 1920x420</li>
+        <li>Banners 1920x500</li>
+        <li>Foto de perfil de usuário 250x250</li>
+        <li>Capa do perfil de usuário 600x200</li>
+        <li>Ícone da categoria 300x300</li>
+        <li>Capa de fundo da página de categoria 1920x300</li>
+      </ul>
+      
+      <ul>
+        <li>Capa do curso: aparece no resumo do aluno para acessar as aulas;</li>
+        <li>Capa do produto e capa de fundo: página de detalhes do curso;</li>
+        <li>Banners: os que aparecem na home;</li>
+        <li>Ícone e capa de fundo da categoria: novidade da nova versão.</li>
+      </ul>
+    </div>
+  )
+}
+
+export const docs = () => {
+
+  return (
+    <div>
+      {btnArticle('https://docs.eadplataforma.com', 'Acessar Central de Ajuda', true)}
+    </div>
+  );
+}
+
+export const about = () => {
+
+  const goInsta = () => {
+    window.open('https://instagram.com/guimachadooo');
+  }
+
+  return (
+    <div>
+      <p>
+        Zenibot é um chat de resposta rápida e direta sobre alguma área
+        da plataforma. Seu propósito é ajudar na conversa com clientes no dia a dia
+        e resumir de forma fácil todos os recursos do EAD.
+      </p>
+
+      <p>Feito com 💚 <span style={{cursor: 'pointer'}} onClick={() => goInsta()}>@guimachadooo</span></p>
     </div>
   )
 }

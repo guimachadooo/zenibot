@@ -12,4 +12,7 @@ export const MAIN_OPTIONS = [
   { value: 9, label: 'API', trigger: MAIN.API },
   { value: 10, label: 'Webhooks', trigger: MAIN.WEBHOOKS },
   { value: 11, label: 'Lixeira', trigger: MAIN.TRASH },
+  { value: 12, label: 'Imagens', trigger: MAIN.IMAGES },
+  { value: 13, label: 'Docs', trigger: MAIN.DOCS },
+  { value: 14, label: 'Sobre', trigger: MAIN.ABOUT },
 ];
